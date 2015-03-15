@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="220"
+   height="254"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="chapeau_logo.svg"
+   inkscape:export-filename="/home/vin/chapeau-logos-17.0.0-4.fc20.src/chapeau-logos-17.0.0/pixmaps/fedora-logo.png"
+   inkscape:export-xdpi="90.253296"
+   inkscape:export-ydpi="90.253296">
+  <metadata
+     id="metadata4255">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1435"
+     inkscape:window-height="852"
+     id="namedview4253"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.1338461"
+     inkscape:cx="110.92534"
+     inkscape:cy="155.12311"
+     inkscape:window-x="225"
+     inkscape:window-y="125"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs5" />
+  <path
+     d="m 33.941633,223.78735 c 43.601062,42.04372 113.030807,40.78227 155.074117,-2.81851 42.02445,-43.58116 40.77712,-112.9685 -2.76798,-155.017932 L 125.15505,7.0404599 C 115.23843,-2.4766759 99.491106,-2.1756853 89.944553,7.7245432 L 31.096632,68.752299 C -10.915546,112.35495 -9.6478142,181.75486 33.941633,223.78735"
+     id="voice"
+     style="fill:#477700;fill-opacity:1"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-size:229.08306885px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+     x="37.168045"
+     y="213.81471"
+     id="text4765"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4767"
+       x="37.168045"
+       y="213.81471"
+       style="fill:#ffffff;fill-opacity:1">é</tspan></text>
+</svg>
