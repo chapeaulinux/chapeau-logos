@@ -1,11 +1,11 @@
 Name:       chapeau-logos
-Version:    1.1.0
+Version:    1.2.0
 Release:    1%{?dist}
 Summary:    Icons and pictures
 
 Group:      System Environment/Base
 URL:        none_yet
-Source0:    chapeau-logos-1.1.0.tar.bz2
+Source0:    chapeau-logos-1.3.0.tar.bz2
 #The KDE Logo is under a LGPL license (no version statement)
 License:    GPLv2 and LGPLv2+
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -16,8 +16,8 @@ Obsoletes:  redhat-logos
 Provides:   redhat-logos = %{version}-%{release}
 Provides:   system-logos = %{version}-%{release}
 
-Conflicts:  fedora-logos
-Conflicts:  generic-logos
+Obsoletes:  fedora-logos
+Obsoletes:  generic-logos
 Conflicts:  anaconda-images <= 10
 Conflicts:  redhat-artwork <= 5.0.5
 # For _kde4_* macros:
@@ -74,10 +74,10 @@ install -p -m 644 icons/Fedora/48x48/apps/* %{buildroot}%{_kde4_iconsdir}/oxygen
 mkdir -p %{buildroot}%{_kde4_appsdir}/ksplash/Themes/Leonidas/2048x1536
 install -p -m 644 ksplash/SolarComet-kde.png %{buildroot}%{_kde4_appsdir}/ksplash/Themes/Leonidas/2048x1536/logo.png
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge/
-for i in plymouth/charge/* ; do
-    install -p -m 644 $i $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge/
-done
+#mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge/
+#for i in plymouth/charge/* ; do
+#    install -p -m 644 $i $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge/
+#done
 
 # File or directory names do not count as trademark infringement
 mkdir -p %{buildroot}%{_datadir}/icons/Fedora/48x48/apps/
@@ -134,7 +134,7 @@ rm -rf %{buildroot}
 %{_datadir}/anaconda/pixmaps/*
 %{_datadir}/icons/Fedora/*/apps/*
 %{_datadir}/pixmaps/*
-%{_datadir}/plymouth/themes/charge/*
+#%{_datadir}/plymouth/themes/charge/*
 %{_kde4_appsdir}/ksplash/Themes/Leonidas/2048x1536/logo.png
 %{_kde4_iconsdir}/oxygen/
 # should be ifarch i386
@@ -142,6 +142,9 @@ rm -rf %{buildroot}
 # end i386 bits
 
 %changelog
+* Fri Feb 28 2014 Vince Pooley <vince@chapeaulinux.org> - 1.2
+- Removed Plymouth charge theme files to remove a confilct
+
 * Mon Jan 13 2014 Vince Pooley <vince@chapeaulinux.org> - 1.1
 - Minor change to pull in the Chapeau meta-package (as this is
 - currently the only package in the Chapeau repo) and to
@@ -149,5 +152,4 @@ rm -rf %{buildroot}
 - 'charge', a copy of the same theme will be repackaged in the
 - 'plymouth-theme-chapeau' package. The plymouth theme is also
 - changed so the progress bar is removed by default.
-
 
