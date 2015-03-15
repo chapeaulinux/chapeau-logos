@@ -1,5 +1,5 @@
 Name:       chapeau-logos
-Version:    1.2.0
+Version:    1.3.0
 Release:    1%{?dist}
 Summary:    Icons and pictures
 
@@ -142,6 +142,10 @@ rm -rf %{buildroot}
 # end i386 bits
 
 %changelog
+* Mon Jun 30 2014 Vince Pooley <vince@chapeaulinux.org> - 1.3
+- Removed pixmaps/poweredby.png to remove a conflict with
+- fedora-httpd-logos package
+
 * Fri Feb 28 2014 Vince Pooley <vince@chapeaulinux.org> - 1.2
 - Removed Plymouth charge theme files to remove a confilct
 
