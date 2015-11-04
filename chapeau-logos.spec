@@ -1,11 +1,11 @@
 Name:       chapeau-logos
-Version:    1.3.0
+Version:    1.3.1
 Release:    1%{?dist}
 Summary:    Icons and pictures
 
 Group:      System Environment/Base
 URL:        none_yet
-Source0:    chapeau-logos-1.3.0.tar.bz2
+Source0:    chapeau-logos-1.3.1.tar.bz2
 #The KDE Logo is under a LGPL license (no version statement)
 License:    GPLv2 and LGPLv2+
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -35,7 +35,7 @@ used in the Fedora Remix, Chapeau as a replacement for the generic-logos
 package.
 
 %prep
-%setup -q
+%setup -c
 
 %build
 make
@@ -142,6 +142,9 @@ rm -rf %{buildroot}
 # end i386 bits
 
 %changelog
+* Tue Nov 03 2015 Vince Pooley <vince@chapeaulinux.org> - 1.3.1
+- Changed %setup macro option to 'c'
+
 * Mon Jun 30 2014 Vince Pooley <vince@chapeaulinux.org> - 1.3
 - Removed pixmaps/poweredby.png to remove a conflict with
 - fedora-httpd-logos package
